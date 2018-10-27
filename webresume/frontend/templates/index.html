@@ -1,13 +1,33 @@
 <!doctype html>
 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+</style>
+</head>
+<body>
 <html lang="en">
 <head>
   <meta charset="utf-8">
 
   <title>Insert Title Here</title>
 
-
-  <!-- <link rel="stylesheet" href="style.css"> -->
 
 </head>
 
@@ -22,11 +42,15 @@
   <script>
   $(window).on('load', function(){
      // change the URL to your server URL here
-     $.getJSON("http://127.0.0.1:8000/api/person/1/", function (data) {
+     $.getJSON("http://162.246.157.121:8000/api/person/1/", function (data) {
           $("#name").text(data.data.attributes.name);
           $("#about").text(data.data.attributes.about);
           $("#education").text(data.data.attributes.education);
           $("#skills").text(data.data.attributes.skills);
+          $("#work").text(data.data.attributes.work);
+          $("#contact").text(data.data.attributes.contact);
+
+
           // Complete consuming the API data and updating the work and contact sections
           // HINT: look at the above lines, jquery documentation, see what is the object returned
      
