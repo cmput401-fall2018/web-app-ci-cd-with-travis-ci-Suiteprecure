@@ -6,4 +6,3 @@ inflection==0.3.1
 pytz==2018.5
 six==1.11.0
 selenium==3.14.0
-geckodriver==0.23.0
